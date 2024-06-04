@@ -1,0 +1,173 @@
+:root {
+  --body-bg-color: rgb(17, 110, 133);
+  --text-color: white;
+  --colorh1-color: rgb(215, 211, 211);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--colorh1-color);
+}
+.title-principal {
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.img-logo {
+  border-radius: 50%;
+}
+
+.img2 {
+  display: inline-block; /* Asegurarse de que la imagen sea un bloque para centrarla correctamente */
+  margin-left: -780px;
+  /* Centrar la imagen horizontalmente */
+  padding: 10px; /* Añadir un relleno para separar la imagen del borde de la página */
+
+  width: 300px;
+}
+
+.navigation {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  justify-content: end;
+  margin: 0 3rem;
+}
+
+.navigation li {
+  font-size: 1rem;
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #f0eaea1a;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.subTitle {
+  margin: 40px; /* Eliminar el margen superior del subtítulo */
+  font-size: 35px;
+}
+
+.name-list {
+  list-style: none; /* Eliminar los estilos de viñetas de la lista */
+  margin: 15px 300px; /* Eliminar cualquier margen en los elementos de la lista */
+  padding: 5px 0; /* Añadir un poco de espacio entre los nombres */
+  font-size: large;
+}
+.sobre-nosotros {
+  display: flex;
+  justify-content: center;
+}
+.cantainer-SN {
+  display: flex;
+  width: 50%;
+  padding: 2rem;
+  margin-top: 5rem;
+  line-height: 2.5rem;
+  font-size: large;
+  color: azure;
+  gap: 5rem;
+  align-items: center;
+}
+.experiencia,
+.estudios {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: azure;
+}
+
+.container-experiencia,
+.container-estudios {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+  line-height: 2.5rem;
+  font-size: large;
+  margin: 8rem;
+}
+
+/* tamaño mobile */
+@media (max-width: 767px) {
+  .title-principal {
+    justify-content: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    font-size: small;
+  }
+
+  .subTitle {
+    justify-content: center;
+    font-size: small;
+  }
+
+  .container-SN {
+    width: 100%;
+    padding: 1;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    font-size: small;
+    flex-direction: column;
+  }
+
+  .experiencia,
+  .estudios {
+    width: 100%;
+    margin: 0rem;
+  }
+
+  .container-experiencia,
+  .container-estudios {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: small;
+  }
+}
+
+/* tamaño tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title-principal {
+    justify-content: center;
+  }
+
+  .navigation {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .experiencia,
+  .estudios {
+    width: 75%;
+  }
+}
+
+/* tamaño desktop */
+@media (min-width: 1024px) {
+  .title-principal {
+    justify-content: flex-start;
+  }
+  .navigation {
+    gap: 3rem;
+    justify-content: flex-end;
+    margin: 0 3rem;
+  }
+
+  .experiencia,
+  .estudios {
+    width: 75%;
+  }
+}
