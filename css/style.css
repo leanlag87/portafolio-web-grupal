@@ -1,93 +1,80 @@
 :root {
-  --body-bg-color: rgb(17, 110, 133);
-  --text-color: white;
-  --colorh1-color: rgb(215, 211, 211);
+  --body-bg-color: rgb(81, 74, 21);
+  --text-color: rgb(206, 207, 187);
+  --colorh1-color: rgb(215,211,211)
+
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  background: var(--body-bg-color);
+body{
   color: var(--text-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--body-bg-color);
+  margin-left: 5rem;
+  margin-top: 4rem;
 }
 
-h1,
-h2 {
-  color: var(--colorh1-color);
-}
-.title-principal {
-  justify-content: flex-start;
-  margin-left: 15px;
-}
+/*titulo del header*/
+.titulo{ 
+  
 
-.img-logo {
-  border-radius: 50%;
+
 }
-
-.img2 {
-  display: inline-block; /* Asegurarse de que la imagen sea un bloque para centrarla correctamente */
-  margin-left: -780px;
-  /* Centrar la imagen horizontalmente */
-  padding: 10px; /* Añadir un relleno para separar la imagen del borde de la página */
-
-  width: 300px;
-}
-
+/*barra de navegacion*/
 .navigation {
-  display: flex;
-  gap: 3rem;
-  list-style: none;
-  justify-content: end;
-  margin: 0 3rem;
+  display: flex;/*utiliza flexbox para organizar los elementos hijos en una lista flexible*/
+  gap: 3rem;/*establece un espacio entre cada elemento hijo dentro del contenedor flex*/
+  list-style: none;/*elimina los puntos de lista predeterminados de los elementos de la lista*/
+  justify-content: flex-end;/*alinea los elementos hijos al final del contenedor flx, a la derecha*/
+  margin: 0 3rem;/*establece un margen de 0 en la parte superior e inferior y de 3 rem en los lados izquierdo*/
+
 }
+/*Enlaces de la barra de navegacion configurados como si fueran botones*/
 
 .navigation li {
+  
   font-size: 1rem;
   width: 100px;
   text-align: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background: #f0eaea1a;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  background: rgba(132, 125, 33, 0.832);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.subTitle {
-  margin: 40px; /* Eliminar el margen superior del subtítulo */
-  font-size: 35px;
+a{
+  color: rgb(227, 227, 218);
+  text-decoration: none;/*elimina el subrayado de los enlaces*/
+
 }
 
-.name-list {
-  list-style: none; /* Eliminar los estilos de viñetas de la lista */
-  margin: 15px 300px; /* Eliminar cualquier margen en los elementos de la lista */
-  padding: 5px 0; /* Añadir un poco de espacio entre los nombres */
-  font-size: large;
+.sobremi{
+  display: flex;
+  justify-content: center;/*esto centra el elemento*/
+
 }
-.sobre-nosotros {
+.container-sobremi{
+  display: flex;
+  width: 50%; /*ancho*/
+  padding: 2rem;
+  margin-top: 5rem; /*margen a lo alto*/
+  line-height: 2.5rem; /*espaciado entre los parrafos del texto*/
+  font-size: large; /*tamaño de la fuente*/
+  color: rgb(186, 182, 147);
+  gap: 5rem;/*separcion de la imagen con el texto*/
+  align-items: center;/*centrar la imagen con el texto*/
+
+}
+
+.img-perfil{
+  border-radius: 50%;/*hacemos la imagen redonda*/
+}
+.experiencia, .estudios {
   display: flex;
   justify-content: center;
-}
-.cantainer-SN {
-  display: flex;
-  width: 50%;
   padding: 2rem;
-  margin-top: 5rem;
-  line-height: 2.5rem;
-  font-size: large;
-  color: azure;
-  gap: 5rem;
-  align-items: center;
+  color: rgb(206, 207, 187);
 }
-.experiencia,
-.estudios {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  color: azure;
-}
-
-.container-experiencia,
-.container-estudios {
+.container-experiencia, .container-estudios{
   width: 100%;
   padding: 2rem;
   margin-top: 5rem;
@@ -95,79 +82,33 @@ h2 {
   font-size: large;
   margin: 8rem;
 }
-
-/* tamaño mobile */
+/* Celular (Pantallas pequeñas hasta 767px) */
 @media (max-width: 767px) {
-  .title-principal {
-    justify-content: center;
+      .titulo {
+          justify-content: center;
+      }
+      .navigation {
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+      }
+      .container-sobremi {
+          width: 100%;
+          padding: 1;
+          margin-top: 1rem;/*margen a lo alto*/
+          line-height: 2.5rem;/*espaciado entre los parrafos del texto*/
+          font-size: small; /*tamaño de la fuente*/
+          flex-direction: column;/*en modo celular la imagen se vera sobre el texto*/
+      }
+      .container-experiencia, .container-estudios {
+          width: 100%;
+          margin: 0rem;
+      }
+      
+      .experiencia, .estudios {
+          width: 100%;
+          padding: 1rem;
+          margin-top: 1rem;
+          font-size: small;
+      }
   }
-
-  .navigation {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    font-size: small;
-  }
-
-  .subTitle {
-    justify-content: center;
-    font-size: small;
-  }
-
-  .container-SN {
-    width: 100%;
-    padding: 1;
-    margin-top: 1rem;
-    line-height: 2.5rem;
-    font-size: small;
-    flex-direction: column;
-  }
-
-  .experiencia,
-  .estudios {
-    width: 100%;
-    margin: 0rem;
-  }
-
-  .container-experiencia,
-  .container-estudios {
-    width: 100%;
-    padding: 1rem;
-    margin-top: 1rem;
-    font-size: small;
-  }
-}
-
-/* tamaño tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .title-principal {
-    justify-content: center;
-  }
-
-  .navigation {
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .experiencia,
-  .estudios {
-    width: 75%;
-  }
-}
-
-/* tamaño desktop */
-@media (min-width: 1024px) {
-  .title-principal {
-    justify-content: flex-start;
-  }
-  .navigation {
-    gap: 3rem;
-    justify-content: flex-end;
-    margin: 0 3rem;
-  }
-
-  .experiencia,
-  .estudios {
-    width: 75%;
-  }
-}
