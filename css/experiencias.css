@@ -1,12 +1,10 @@
-.experiencia,
-.estudios {
+.experiencia {
   display: flex;
   justify-content: center;
   padding: 2rem;
   color: rgb(206, 207, 187);
 }
-.container-experiencia,
-.container-estudios {
+.container-experiencia {
   width: 100%;
   padding: 2rem;
   margin-top: 5rem;
@@ -17,14 +15,12 @@
 
 /* Celular (Pantallas pequeñas hasta 767px) */
 @media (max-width: 767px) {
-  .container-experiencia,
-  .container-estudios {
+  .container-experiencia {
     width: 100%;
     margin: 0rem;
   }
 
-  .experiencia,
-  .estudios {
+  .experiencia {
     width: 100%;
     padding: 1rem;
     margin-top: 1rem;
