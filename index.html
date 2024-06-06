@@ -1,73 +1,113 @@
 <!DOCTYPE html>
 <!-- Declaracion del tipo de documento, especifica que se trata de un HTML5 -->
-<html lang="en"><!-- indica que el idioma esta en ingles-->
-<head>
+<html lang="es">
+  <!-- indica que el idioma esta en ingles-->
+  <head>
     <!-- contiene metadatos y enlaces a recursos externos, no se muestra directamente en la pagina-->
-    <meta charset="UTF-8"><!-- Declara la codificacion de caracteres del documento como UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Declara la codificacion de caracteres del documento como UTF-8 -->
     <!-- Especifica el idioma del contenido del documento-->
-    <meta http-equiv="content-lenguage" content="es">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-lenguage" content="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- configura la ventana grafica para el diseño responsivo-->
     <!-- width=device-width establece el ancho de la pagina para que coincida con el ancho del dispositivo.
     initial-scale=1.0 establece el nivel del zoom inicial cuando la pagina se carga.-->
     <!-- agregamos dos etiquetas meta para el Seo de la clase anterior mas otra etiqueta meta al del autor-->
-    <meta name="description" content="Nombre del Grupo o alumno, creado por nombre del grupo especializado en [Programacion]">
-    <meta name="keywords" content="portafolio, desarrollador web, [Programador], proyectos, contacto">
-    <meta name="author" content="Tu Nombre">
-    
+    <meta
+      name="description"
+      content="Nombre del Grupo o alumno, creado por nombre del grupo especializado en [Programacion]"
+    />
+    <meta
+      name="keywords"
+      content="portafolio, desarrollador web, [Programador], proyectos, contacto"
+    />
+    <meta name="author" content="Tu Nombre" />
     <title>Portafolio web</title>
     <!-- Define el titulo del documento, que se muestra en la pestaña del navegador o en los resultados de busqueda. -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./css/estudios.css" />
+    <link rel="stylesheet" href="./css/experiencias.css" />
+    <link rel="stylesheet" href="./css/sobremi.css" />
     <!-- Enlace a una hoja de estilos externa.
-        href="./style.css"especifica la ubicacion del archivo CSS. -->
-</head>
-<body> 
+      href="./style.css"especifica la ubicacion del archivo CSS. -->
+  </head>
+  <body>
     <!-- cuerpo del documento, contenido visible para los usuarios-->
     <header>
-        <!-- Seccion de cabecera de la pagina, generalmente contiene logotipos, navegacion y titulos. -->
-        <h1 class="titulo">CodeTitans</h1>
-        <!-- Encabezado principal de la pagina-->
-        <img src="" alt="">
-        <nav>
-            <ul class="navigation"> <!-- lista no ordenada de elementos de navegacion
+      <!-- Seccion de cabecera de la pagina, generalmente contiene logotipos, navegacion y titulos. -->
+      <h1 class="titulo">CodeTitans</h1>
+
+      <!-- Encabezado principal de la pagina-->
+      <nav>
+        <ul class="navigation">
+          <!-- lista no ordenada de elementos de navegacion
                     class="navigacion aplica estilos definidos en CSS a esta lista"-->
-                <li><a href="Leandro-Gonzalez">Leandro Gonzalez</a></li><!-- href="" apunta a un ancla dentro de la misma pagina con el id=""-->
-                <li><a href="Martiniano-Zallocco">Martiniano Zallocco</a></li>
-                <li><a href="Mauro-Gonzalez">Mauro Gonzalez</a></li>
-                <li><a href="#Guardini-Philama">Guardini Philama</a></li>
-                <li><a href="Martin-Coria">Martin Coria</a></li>    
-                <li><a href="Cecilia-Olejarzcyk">Cecilia Olejarzcyk</a></li>
-                <li><a href="Guillermo-Pacheco">Guillermo Pacheco</a></li>
-                <li><a href="Denis-Taraboreli">Denis Taraboreli</a></li>
-            </ul>
-        </nav>
+          <li><a href="Leandro-Gonzalez">Leandro Gonzalez</a></li>
+          <!-- href="" apunta a un ancla dentro de la misma pagina con el id=""-->
+          <li><a href="Martiniano-Zallocco">Martiniano Zallocco</a></li>
+          <li><a href="Mauro-Gonzalez">Mauro Gonzalez</a></li>
+          <li><a href="#Guardini-Philama">Guardini Philama</a></li>
+          <li><a href="Martin-Coria">Martin Coria</a></li>
+          <li><a href="Cecilia-Olejarzcyk">Cecilia Olejarzcyk</a></li>
+          <li><a href="Guillermo-Pacheco">Guillermo Pacheco</a></li>
+          <li><a href="Denis-Taraboreli">Denis Taraboreli</a></li>
+        </ul>
+      </nav>
     </header>
-<main>
-    <section class="sobremi">
+    <main class="main-container">
+      <!--Seccion sobre mi-->
+      <section class="sobremi">
         <article class="container-sobremi">
-            <img class="img-perfil" src="Assets/unnamed.png" alt="fotografia de CodeTitans" width="200" height="200">
-            <h2>
-                Somos el grupo CodeTitans estudiantes de la Tecnicatura en Programacion de la UTN-San Rafael Cohorte 2024.
-            </h2>
+          <img
+            class="img-perfil"
+            src="Assets/unnamed.png"
+            alt="fotografia de CodeTitans"
+            width="200"
+            height="200"
+          />
+          <h2>
+            Somos el grupo CodeTitans estudiantes de la Tecnicatura en
+            Programacion de la UTN-San Rafael Cohorte 2024.
+          </h2>
         </article>
-    </section>
-    <section id="experiencia" class="experiencia">
+      </section>
+
+      <!--Seccion experiencia-->
+      <section id="experiencia" class="experiencia">
         <article class="container-experiencia">
-            <h2>Experiencia Grupal</h2>
-            <h3>UNT - San Rafael</h3>
-            <h4>Marzo a Junio 2024 - Proyecto Integrador</h4>
-                <a href="https://app-interareas-2023.web.app/" target="_blank"> ir al proyecto </a>
-            <p> Actualmente estamos trabajando en el proyecto integrador de final de
-                semestre. Es nuestro primer proyecto de programacion y el mas
-                importante para poder aprobar el semestre y continuar la carrera de
-                la mejor manera.</p>
+          <h2>Experiencia Grupal</h2>
+          <h3>UNT - San Rafael</h3>
+          <h4>Marzo a Junio 2024 - Proyecto Integrador</h4>
+          <a href="https://app-interareas-2023.web.app/" target="_blank">
+            ir al proyecto
+          </a>
+          <p>
+            Actualmente estamos trabajando en el proyecto integrador de final de
+            semestre. Es nuestro primer proyecto de programacion y el mas
+            importante para poder aprobar el semestre y continuar la carrera de
+            la mejor manera.
+          </p>
         </article>
-    </section id="estudios" class="estudios">
+      </section>
+
+      <!--Seccion estudios-->
+      <section id="estudios" class="estudios">
         <article class="container-estudios">
-            <h2>Mis estudios</h2>
-            <p>descripcion de los estudios... </p>
+          <h2>Mis estudios</h2>
+          <h6>Marzo 2024 - Actualmente</h6>
+          <h3>Titulo: Tecnico/a Universitarion en Programacion</h3>
+          <div class="container-estudios-section">
+            <img
+              class="img-utn"
+              src="Assets/245108495_224475683007377_8624838410684587705_n.jpg"
+              alt="logo-utn"
+              width="100"
+              height="100"
+            />
+            <p>descripcion de los estudios...</p>
+          </div>
         </article>
-    </section>
-</main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>

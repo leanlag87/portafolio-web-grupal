@@ -1,0 +1,45 @@
+.sobremi {
+  display: flex;
+  justify-content: center; /*esto centra el elemento*/
+}
+.container-sobremi {
+  display: flex;
+  width: 50%; /*ancho*/
+  padding: 2rem;
+  margin-top: 5rem; /*margen a lo alto*/
+  line-height: 2.5rem; /*espaciado entre los parrafos del texto*/
+  font-size: large; /*tamaño de la fuente*/
+  color: rgb(186, 182, 147);
+  gap: 5rem; /*separcion de la imagen con el texto*/
+  align-items: center; /*centrar la imagen con el texto*/
+}
+
+.img-perfil {
+  border-radius: 50%; /*hacemos la imagen redonda*/
+}
+
+/* Celular (Pantallas pequeñas hasta 767px) */
+@media (max-width: 767px) {
+  .container-sobremi {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem; /*margen a lo alto*/
+    line-height: 2.5rem; /*espaciado entre los parrafos del texto*/
+    font-size: small; /*tamaño de la fuente*/
+    flex-direction: column; /*en modo celular la imagen se vera sobre el texto*/
+  }
+}
+
+/* tamaño Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-sobremi {
+    width: 75%;
+  }
+}
+
+/* tamaño Desktop */
+@media (min-width: 1024px) {
+  .container-sobremi {
+    width: 50%;
+  }
+}
